@@ -1,7 +1,6 @@
 import random
 from statistics import multimode
 import math
-
 global months_29
 global months_30
 global months_31
