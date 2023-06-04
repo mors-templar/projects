@@ -94,14 +94,14 @@ if len(index) == 1:
     print(birth_day[index[0]], month_in_name(birth_month[index[0]]))
 elif len(index) > 1:
     for z in range(0, len(index)):
-        print(birth_day[index[z]], (month_in_name(birth_month[index[z]])), end=',')
+        print(birth_day[index[z]], (month_in_name(birth_month[index[z]])))
 
 for x in range(0, 1):
     if x % 10_000 == 0:
         print('simulated ', x, ' values')
     birth_dayANDmonth = select_bdays(count)
     index = find_duplicates(birth_dayANDmonth)
-    dup_count = len(index)
+    dup_count = len(index) + dup_count
 
 probability = (dup_count / 100_000) * 100
 print('probability is:', round(probability, 2), '%')
